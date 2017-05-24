@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-
 app.get('/', function (req, res) { //route
   res.send('Hello World!');
 });
@@ -40,6 +39,12 @@ app.get('/getStudent',function(req,res){
   }  
 });
 
+app.get('/getAllStudent',function(req,res){
+  console.log(students);
+   res.send(students);
+})
+
+
 app.get('/deleteStudent',function(req,res){
   var student
   for(var i=0;i<students.length; i++){
@@ -60,9 +65,6 @@ app.get('/deleteStudent',function(req,res){
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
-
-
-
 
 //req.query    http://localhost:3000/deleteStudent?id=2
 //req.body

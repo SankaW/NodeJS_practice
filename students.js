@@ -9,7 +9,7 @@ var students = [
         id:2,
         name: "nimmi",
         age:23,
-        address:"homagama"
+        address:"gampaha"
     },
     {
         id:3,
@@ -25,9 +25,9 @@ var students = [
     },
     {
         id:5,
-        name: "sanka pig",
+        name: "sanka",
         age:62,
-        address:"minuwangoda pig house"
+        address:"minuwangoda "
     }
 ]
 
